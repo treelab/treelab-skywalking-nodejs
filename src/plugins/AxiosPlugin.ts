@@ -49,7 +49,7 @@ class AxiosPlugin implements SwPlugin {
       try {
         let { origin, host, pathname: operation } = new URL(config.url, config.baseURL); // TODO: this may throw invalid URL
       } catch {
-        operation = url;
+        operation = config.url;
       }
 
       const method = (config.method || 'GET').toUpperCase();

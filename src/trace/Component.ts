@@ -24,9 +24,11 @@ export class Component {
   static readonly REDIS = new Component(7);
   static readonly MONGODB = new Component(9);
   static readonly POSTGRESQL = new Component(22);
+  static readonly GRPC = new Component(23);
   static readonly HTTP_SERVER = new Component(49);
   static readonly RABBITMQ_PRODUCER = new Component(52);
   static readonly RABBITMQ_CONSUMER = new Component(53);
+  static readonly GRAPHQL = new Component(92);
   static readonly AZURE_HTTPTRIGGER = new Component(111);
   static readonly AWSLAMBDA_FUNCTION = new Component(124);
   static readonly AWSLAMBDA_GATEWAYAPIHTTP = new Component(125);
